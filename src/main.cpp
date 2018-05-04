@@ -1001,13 +1001,14 @@ uint256 WantedByOrphan(const CBlock* pblockOrphan)
 int64_t GetProofOfWorkReward(int64_t nFees)
 {
     
-            int64_t nSubsidy = 10 * COIN;
-
+            int64_t nSubsidy = 10 * COIN; // Fixed a problem with genesis block producing only 210 Coins.
+            int64_t normalreward1 = 10 * COIN;
             if(nBestHeight == 1)
             {
-            nSubsidy = 210000 * COIN;
+            normalreward1 = 210000 * COIN;
             }
-
+            nSubsidy = normalreward1;
+    
     if (fDebug && GetBoolArg("-printcreation"))
         printf("GetProofOfWorkReward() : create=%s nSubsidy=%"PRId64"\n", FormatMoney(nSubsidy).c_str(), nSubsidy);
 
