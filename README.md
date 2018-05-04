@@ -1,7 +1,7 @@
 
 Gift development tree
 
-Gift is a PoS-based cryptocurrency.
+Gift is a PoW/PoS/MN Hybrid cryptocurrency.
 
 Development process
 ===========================
