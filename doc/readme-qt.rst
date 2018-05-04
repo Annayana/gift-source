@@ -32,16 +32,7 @@ An executable named `gift-qt` will be built.
 Windows
 --------
 
-Windows build instructions:
-
-- Download the `QT Windows SDK`_ and install it. You don't need the Symbian stuff, just the desktop Qt.
-
-- Compile openssl, boost and dbcxx.
-
-- Open the .pro file in QT creator and build as normal (ctrl-B)
-
-.. _`QT Windows SDK`: http://qt-project.org/downloads
-
+Windows build instructions have been removed due to being outdated. Windows compiling instructions will be added as soon as possible.
 
 Mac OS X
 --------
